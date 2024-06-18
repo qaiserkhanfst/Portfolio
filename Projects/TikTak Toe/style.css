@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .game-heading {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    /* border: 5px solid #ffffff; */
+    /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7); */
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 2px solid white;
+    font-size: 8vmin;
+    color: white;
+    background-color: black;
+    animation: glow 1s ease-in-out forwards alternate;
+    
+
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  /* @keyframes glowbox {
+    from {
+      box-shadow: 0 1 1 #fff, 0 0 1px #fff, 0 0 2px #f1edef, 0 0 4px #9c9b9c, 0 0 6px #faf8f9, 0 0 8px #f7f2f5, 0 0 10px #f9eff4;
+    }
+    
+    to {
+      box-shadow: 0 0 2px #fff, 0 0 2px #efe9ec, 0 0 4px #f6f2f4, 0 0 6px #faf6f8, 0 0 8px #f7f5f6, 0 0 10px #fff1f8, 0 0 12px #f6edf2;
+    }
+  } */
+  #reset-btn, #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7);
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 9vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
