@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+    <div class="quiz-section">
+        <div id="quiz">
+            <h2 class="question" id="question">Quiz Header</h2>
+        <hr/>
+        <ul id="unorderlist">
+            <li>
+                <input type="radio" name="answer" class="answer" id="a">
+                <label for="a" id="option_1">Quiz Option</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="b">
+                <label for="b" id="option_2">Quiz Option</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="c">
+                <label for="c" id="option_3">Quiz Option</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="d">
+                <label for="d" id="option_4">Quiz Option</label>
+            </li>
+        </ul>
+        <hr>
+        <button id="btn" class="btn">Next Question</button>
+        <button id="tryAgainBtn" class="btn" style="display: none;">Try Again</button> 
+        <button id="showResultsBtn" class="btn" style="display: none;">Show Results</button> <!-- Add this button -->
+        <!-- <div id="resetbtn"></div> -->
+        </div>
+        
+    </div>
+    <div id="results" style="display: none;"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
